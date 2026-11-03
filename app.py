@@ -49,7 +49,22 @@ MODULOS = {
             "recursos de manera innecesaria y una mala imagen de la entidad."
         ),
     },
-    "modulo3": {"titulo": "Módulo 3.4", "nombre": "Módulo 3", "duracion": "—", "objetivos": "Contenido pendiente.", "situacion": "Contenido pendiente."},
+    "modulo3": {
+        "titulo": "Módulo 3.4",
+        "nombre": "Elaboración de Documentación de Sistemas Informáticos",
+        "duracion": "12 semanas",
+        "competencia": (
+            "Elaborar documentación de sistemas informáticos, como medio para lograr la "
+            "fácil comprensión de sus estructuras, elementos y funcionalidad: y como apoyo "
+            "en la capacitación de nuevas contrataciones sobre las herramientas con que la "
+            "empresa cuenta."
+        ),
+        "objetivos": "Contenido pendiente.",
+        "situacion": (
+            "El Mantenimiento de sistemas en muchas empresas demora más de lo esperado "
+            "porque no existe la documentación necesaria."
+        ),
+    },
     "modulo4": {"titulo": "Módulo 3.8", "nombre": "Módulo 4", "duracion": "—", "objetivos": "Contenido pendiente.", "situacion": "Contenido pendiente."},
 }
 
