@@ -17,11 +17,12 @@
             &gt; Sistema activo. Seleccioná un módulo del menú para comenzar.
         </p>
         <div class="cta-row">
+            {% set labels = {1:'Módulo 1',2:'Módulo 3.3',3:'Módulo 3.4',4:'Módulo 3.8'} %}
             {% for m in range(1,5) %}
             {% if static_build %}
-            <a href="modulo{{ m }}.html" class="cyber-btn">Módulo {{ m }}</a>
+            <a href="modulo{{ m }}.html" class="cyber-btn">{{ labels[m] }}</a>
             {% else %}
-            <a href="{{ url_for('modulo', slug='modulo' + (m|string)) }}" class="cyber-btn">Módulo {{ m }}</a>
+            <a href="{{ url_for('modulo', slug='modulo' + (m|string)) }}" class="cyber-btn">{{ labels[m] }}</a>
             {% endif %}
             {% endfor %}
         </div>

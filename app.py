@@ -13,6 +13,7 @@ def inject_build_flags():
 
 MODULOS = {
     "modulo1": {
+        "titulo": "Módulo 1",
         "nombre": "Mantenimiento y aseguramiento de la operación del sistema informático",
         "duracion": "8 semanas",
         "objetivos": (
@@ -29,6 +30,7 @@ MODULOS = {
         ),
     },
     "modulo2": {
+        "titulo": "Módulo 3.3",
         "nombre": "Administración de Bases de Datos",
         "duracion": "12 semanas",
         "competencia": (
@@ -47,8 +49,8 @@ MODULOS = {
             "recursos de manera innecesaria y una mala imagen de la entidad."
         ),
     },
-    "modulo3": {"nombre": "Módulo 3", "duracion": "—", "objetivos": "Contenido pendiente.", "situacion": "Contenido pendiente."},
-    "modulo4": {"nombre": "Módulo 4", "duracion": "—", "objetivos": "Contenido pendiente.", "situacion": "Contenido pendiente."},
+    "modulo3": {"titulo": "Módulo 3.4", "nombre": "Módulo 3", "duracion": "—", "objetivos": "Contenido pendiente.", "situacion": "Contenido pendiente."},
+    "modulo4": {"titulo": "Módulo 3.8", "nombre": "Módulo 4", "duracion": "—", "objetivos": "Contenido pendiente.", "situacion": "Contenido pendiente."},
 }
 
 
@@ -63,7 +65,8 @@ def modulo(slug):
     if m is None:
         return render_template("404.html", title="404"), 404
     num = slug.replace("modulo", "")
-    return render_template("modulo.html", title="Módulo " + num, data=m, n=num)
+    titulo = m.get("titulo", "Módulo " + num)
+    return render_template("modulo.html", title=titulo, data=m, n=num)
 
 
 if __name__ == "__main__":
