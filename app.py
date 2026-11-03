@@ -1,6 +1,15 @@
+import os
 from flask import Flask, render_template
 
 app = Flask(__name__)
+
+STATIC_BUILD = os.environ.get("STATIC_BUILD") == "1"
+
+
+@app.context_processor
+def inject_build_flags():
+    return {"static_build": STATIC_BUILD}
+
 
 MODULOS = {
     "modulo1": {
