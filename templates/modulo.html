@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="modulo">
+    <h1 class="glitch" data-text="{{ title }}">{{ title }}</h1>
+    <p class="kicker">// MÓDULO {{ n }} &mdash; {{ data.nombre }}</p>
+    <div class="panel">
+        <h3>Duración</h3>
+        <p>{{ data.duracion }}</p>
+    </div>
+    {% if data.competencia %}
+    <div class="panel">
+        <h3>Competencia</h3>
+        <p>{{ data.competencia }}</p>
+    </div>
+    {% endif %}
+    <div class="panel">
+        <h3>Objetivos del módulo</h3>
+        <p>{{ data.objetivos }}</p>
+    </div>
+    <div class="panel">
+        <h3>Situación problemática</h3>
+        <p>{{ data.situacion }}</p>
+    </div>
+</section>
+{% endblock %}

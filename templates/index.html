@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-scanline"></div>
+    <div class="hero-content">
+        <p class="kicker">// ACADEMIC BLACKOUT INITIATED</p>
+        <h1 class="glitch" data-text="REPASO DE MÓDULOS">REPASO DE MÓDULOS</h1>
+        <h2 class="subtitle">3 DESARROLLO DE SOFTWARE &mdash; AÑO 2026</h2>
+        <div class="divider">
+            <span class="line"></span>
+            <span class="glyph">◆</span>
+            <span class="line"></span>
+        </div>
+        <p class="tagline">
+            &gt; Cargando memoria académica...<br>
+            &gt; Sistema activo. Seleccioná un módulo del menú para comenzar.
+        </p>
+        <div class="cta-row">
+            {% for m in range(1,5) %}
+            <a href="{{ url_for('modulo', slug='modulo' + (m|string)) }}" class="cyber-btn">Módulo {{ m }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

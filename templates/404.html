@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="modulo">
+    <h1 class="glitch" data-text="404">404</h1>
+    <p class="kicker">// NOT FOUND</p>
+    <div class="panel">
+        <p>La página solicitada no existe.</p>
+        <p><a href="{{ url_for('index') }}" class="cyber-btn">Volver a Home</a></p>
+    </div>
+</section>
+{% endblock %}
