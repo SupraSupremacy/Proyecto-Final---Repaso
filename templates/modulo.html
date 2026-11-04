@@ -40,6 +40,13 @@
         <article id="tool-{{ h|slugify }}" class="tool-def">
             <h4>{{ h }}</h4>
             <p>{{ tool_info.get(h, "Definición pendiente.") }}</p>
+            {% if learned_info.get(h) %}
+            <p class="learned"><strong>Lo que aprendimos:</strong> {{ learned_info.get(h) }}</p>
+            {% endif %}
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>{{ deep_info.get(h, "Profundidad pendiente.") }}</p>
+            </details>
         </article>
         {% endfor %}
     </div>

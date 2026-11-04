@@ -183,3 +183,11 @@ h1.glitch::after { color: var(--neon-teal); animation: glitch-2 2.5s infinite; c
 .tool-def:last-child { border-bottom: none; }
 .tool-def h4 { color: var(--neon-lime); margin-bottom: 6px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; }
 .tool-def p { color: var(--text); line-height: 1.6; font-size: 0.95rem; }
+.learned { color: var(--muted); font-size: 0.92rem; margin: 10px 0 12px; line-height: 1.6; }
+.learned strong { color: var(--neon-cyan); }
+.tool-deep { margin-top: 12px; }
+.tool-deep > summary { cursor: pointer; list-style: none; padding: 10px 12px; background: rgba(0,255,159,0.06); border: 1px solid var(--border); color: var(--neon-lime); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; font-size: 0.8rem; }
+.tool-deep > summary::-webkit-details-marker { display: none; }
+.tool-deep > summary::before { content: '+ '; }
+.tool-deep[open] > summary::before { content: '- '; }
+.tool-deep > p { margin-top: 12px; padding: 0 2px; line-height: 1.7; }

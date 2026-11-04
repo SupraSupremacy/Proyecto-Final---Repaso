@@ -33,6 +33,8 @@ function snippet(module, query) {
         ['Situación', module.situacion],
         ['Herramientas', textOf(module.herramientas)],
         ['Definiciones', textOf(module.definiciones)],
+        ['Aprendimos', textOf(module.aprendizajes)],
+        ['Profundidad', textOf(module.profundidades)],
         ['Módulo', module.nombre]
     ];
     for (const [label, value] of fields) {
@@ -66,7 +68,9 @@ function filteredModules() {
             module.objetivos,
             module.situacion,
             textOf(module.herramientas),
-            textOf(module.definiciones)
+            textOf(module.definiciones),
+            textOf(module.aprendizajes),
+            textOf(module.profundidades)
         ].join(' '));
         return haystack.includes(query);
     });
