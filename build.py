@@ -30,6 +30,12 @@ def main():
     if STATIC_DST.exists():
         shutil.rmtree(STATIC_DST)
     shutil.copytree(STATIC_SRC, STATIC_DST)
+
+    import json
+    from app import module_records
+    (DOCS / "modules.json").write_text(
+        json.dumps(module_records(), ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     print(f"Built {len(ROUTES)} pages into {DOCS}")
 
 

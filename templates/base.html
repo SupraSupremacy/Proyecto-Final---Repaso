@@ -28,6 +28,12 @@
                 {% endfor %}
                 {% endif %}
             </nav>
+            <div class="search-wrap">
+                <input id="searchInput" type="search" class="search-input" placeholder="Buscar en módulos..." autocomplete="off">
+                <select id="filterModule" class="search-select"><option value="">Todos los módulos</option></select>
+                <select id="filterTool" class="search-select"><option value="">Todas las herramientas</option></select>
+                <div id="searchResults" class="search-results" hidden></div>
+            </div>
         </div>
     </header>
     <main>
@@ -36,5 +42,10 @@
     <footer class="cyber-footer">
         <span>© 2026 NEONCORE SYS // BOOT SEQUENCE COMPLETE</span>
     </footer>
+    {% if static_build %}
+    <script src="static/js/search.js" defer></script>
+    {% else %}
+    <script src="{{ url_for('static', filename='js/search.js') }}" defer></script>
+    {% endif %}
 </body>
 </html>

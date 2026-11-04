@@ -145,5 +145,31 @@ def modulo(slug):
     return render_template("modulo.html", title=titulo, data=m, n=num)
 
 
+def module_records():
+    out = []
+    for slug, m in MODULOS.items():
+        out.append({
+            "slug": slug,
+            "title": m.get("titulo", slug),
+            "nombre": m.get("nombre", ""),
+            "duracion": m.get("duracion", ""),
+            "competencia": m.get("competencia", ""),
+            "objetivos": m.get("objetivos", ""),
+            "situacion": m.get("situacion", ""),
+            "herramientas": m.get("herramientas", []),
+            "url": (slug + ".html") if STATIC_BUILD else ("/" + slug),
+        })
+    return out
+
+
+@app.route("/modules.json")
+def modules_json():
+    import json
+    return app.response_class(
+        json.dumps(module_records(), ensure_ascii=False),
+        mimetype="application/json",
+    )
+
+
 if __name__ == "__main__":
     app.run(debug=True)

@@ -1,0 +1,84 @@
+[
+  {
+    "slug": "modulo1",
+    "title": "Módulo 1",
+    "nombre": "Mantenimiento y aseguramiento de la operación del sistema informático",
+    "duracion": "8 semanas",
+    "competencia": "",
+    "objetivos": "Desarrollar las competencias que permitan definir planes operativos y contingenciales, utilizando normas ISO, estándares internacionales y buenas prácticas como las que implementa ITIL v3 y normas ISO, para mantener la operación y la sostenibilidad de un sistema computacional.",
+    "situacion": "Las caídas constantes en los sistemas informáticos no se tienen mitigadas debido a que no se cuenta con un área que se encargue del mantenimiento y aseguramiento de la operación. Esto genera atrasos en la cadena productiva, erogación de recursos de manera innecesaria y una mala imagen de la entidad.",
+    "herramientas": [
+      "Visual Studio",
+      "C#",
+      ".NET Framework 4.8",
+      "Windows Forms",
+      "ADO.NET (System.Data)",
+      "MSBuild"
+    ],
+    "url": "modulo1.html"
+  },
+  {
+    "slug": "modulo2",
+    "title": "Módulo 3.3",
+    "nombre": "Administración de Bases de Datos",
+    "duracion": "12 semanas",
+    "competencia": "Definir procedimientos, esquemas y políticas de seguridad de una base de datos, supervisando además el desempeño de las aplicaciones que obtienen recursos de estas.",
+    "objetivos": "Desarrollar las competencias que permiten realizar una adecuada gestión de una base de datos, asegurando la integridad de la información almacenada en ella.",
+    "situacion": "Las caídas constantes de la base de datos de un sistema informático se deben a que no se administra, gestiona y planifica adecuadamente, generando atrasos en la cadena productiva, malestar en los usuarios internos y externos, erogación de recursos de manera innecesaria y una mala imagen de la entidad.",
+    "herramientas": [
+      "Microsoft Access",
+      "SQL (MySQL / SQL Server)",
+      "Power BI",
+      "Microsoft Excel",
+      "HTML / CSS",
+      "Windows Batch (backups)"
+    ],
+    "url": "modulo2.html"
+  },
+  {
+    "slug": "modulo3",
+    "title": "Módulo 3.4",
+    "nombre": "Elaboración de Documentación de Sistemas Informáticos",
+    "duracion": "12 semanas",
+    "competencia": [
+      "Elabora manuales técnicos del sistema, contribuye diccionario de datos, crea manual de usuario, documenta procesos con DFD, usa UML para modelación.",
+      "Propone ideas de proyectos software, visualiza oportunidades de negocio, desarrolla habilidades de venta, busca recursos tecnológicos.",
+      "Proactivo con el cliente, actúa con ética profesional, es autodidacta y curioso, comunica ideas con claridad, trabaja en equipo eficientemente.",
+      "Emplea estándares de documentación, usa POO para comprender arquitectura, aplica fundamentos DB, interpreta documentos de diseño, usa símbolos para diagramas de flujo."
+    ],
+    "objetivos": "Elaborar documentación de sistemas informáticos, como medio para lograr la fácil comprensión de sus estructuras, elementos y funcionalidad: y como apoyo en la capacitación de nuevas contrataciones sobre las herramientas con que la empresa cuenta.",
+    "situacion": "El Mantenimiento de sistemas en muchas empresas demora más de lo esperado porque no existe la documentación necesaria.",
+    "herramientas": [
+      "Visual Studio",
+      "C#",
+      ".NET Framework 4.8",
+      "Windows Forms",
+      "WPF (XAML)",
+      "HTML / CSS",
+      "Microsoft Word / PDF"
+    ],
+    "url": "modulo3.html"
+  },
+  {
+    "slug": "modulo4",
+    "title": "Módulo 3.8",
+    "nombre": "Proyecto innovador de desarrollo de software",
+    "duracion": "3 Semanas",
+    "competencia": "Desarrollar aplicaciones de software orientadas a la información general para la toma de decisiones acertadas y confiables en una empresa o entidad.",
+    "objetivos": "Desarrollar las competencias que permitan la creación de aplicaciones de software orientadas a la producción de información gerencial para la toma de decisiones acertadas y confiables dentro de una empresa o entidad.",
+    "situacion": "Ciertas empresas toman decisiones erróneas basadas en información no confiable debido a la carencia de sistemas de información general, lo cual provoca altas pérdidas financieras y disminución en oportunidades de negocio tanto a nivel nacional como internacional.",
+    "herramientas": [
+      "Node.js / npm",
+      "TypeScript",
+      "Vite",
+      "Vitest",
+      "ESLint",
+      "Python",
+      "Flask",
+      "Jinja2",
+      "Git & GitHub Pages",
+      "HTML / CSS"
+    ],
+    "url": "modulo4.html"
+  }
+]
