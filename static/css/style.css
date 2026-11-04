@@ -154,6 +154,10 @@ h1.glitch::after { color: var(--neon-teal); animation: glitch-2 2.5s infinite; c
 }
 .modulo .panel h3 { color: var(--neon-yellow); margin-bottom: 8px; letter-spacing: 2px; text-transform: uppercase; font-size: 0.9rem; }
 .muted { color: var(--muted); margin-top: 8px; font-size: 0.9rem; }
+.comp-list { list-style: none; padding: 0; text-align: left; }
+.comp-list li { padding: 10px 0 10px 22px; border-bottom: 1px solid var(--border); position: relative; line-height: 1.6; }
+.comp-list li:last-child { border-bottom: none; }
+.comp-list li::before { content: '>'; position: absolute; left: 0; color: var(--neon-lime); font-weight: 900; }
 
 .cyber-footer {
     text-align: center; padding: 20px; color: var(--muted);

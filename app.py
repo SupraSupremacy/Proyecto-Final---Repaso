@@ -53,7 +53,12 @@ MODULOS = {
         "titulo": "Módulo 3.4",
         "nombre": "Elaboración de Documentación de Sistemas Informáticos",
         "duracion": "12 semanas",
-        "competencia": "",
+        "competencia": [
+            "Elabora manuales técnicos del sistema, contribuye diccionario de datos, crea manual de usuario, documenta procesos con DFD, usa UML para modelación.",
+            "Propone ideas de proyectos software, visualiza oportunidades de negocio, desarrolla habilidades de venta, busca recursos tecnológicos.",
+            "Proactivo con el cliente, actúa con ética profesional, es autodidacta y curioso, comunica ideas con claridad, trabaja en equipo eficientemente.",
+            "Emplea estándares de documentación, usa POO para comprender arquitectura, aplica fundamentos DB, interpreta documentos de diseño, usa símbolos para diagramas de flujo.",
+        ],
         "objetivos": (
             "Elaborar documentación de sistemas informáticos, como medio para lograr la "
             "fácil comprensión de sus estructuras, elementos y funcionalidad: y como apoyo "

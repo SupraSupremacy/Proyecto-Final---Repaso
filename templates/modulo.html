@@ -10,7 +10,15 @@
     {% if data.competencia %}
     <div class="panel">
         <h3>Competencia</h3>
+        {% if data.competencia is string %}
         <p>{{ data.competencia }}</p>
+        {% else %}
+        <ul class="comp-list">
+            {% for c in data.competencia %}
+            <li>{{ c }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
     </div>
     {% endif %}
     <div class="panel">
