@@ -16,6 +16,14 @@ MODULOS = {
         "titulo": "Módulo 1",
         "nombre": "Mantenimiento y aseguramiento de la operación del sistema informático",
         "duracion": "8 semanas",
+        "herramientas": [
+            "Visual Studio",
+            "C#",
+            ".NET Framework 4.8",
+            "Windows Forms",
+            "ADO.NET (System.Data)",
+            "MSBuild",
+        ],
         "objetivos": (
             "Desarrollar las competencias que permitan definir planes operativos y "
             "contingenciales, utilizando normas ISO, estándares internacionales y buenas "
@@ -33,6 +41,14 @@ MODULOS = {
         "titulo": "Módulo 3.3",
         "nombre": "Administración de Bases de Datos",
         "duracion": "12 semanas",
+        "herramientas": [
+            "Microsoft Access",
+            "SQL (MySQL / SQL Server)",
+            "Power BI",
+            "Microsoft Excel",
+            "HTML / CSS",
+            "Windows Batch (backups)",
+        ],
         "competencia": (
             "Definir procedimientos, esquemas y políticas de seguridad de una base de "
             "datos, supervisando además el desempeño de las aplicaciones que obtienen "
@@ -53,6 +69,15 @@ MODULOS = {
         "titulo": "Módulo 3.4",
         "nombre": "Elaboración de Documentación de Sistemas Informáticos",
         "duracion": "12 semanas",
+        "herramientas": [
+            "Visual Studio",
+            "C#",
+            ".NET Framework 4.8",
+            "Windows Forms",
+            "WPF (XAML)",
+            "HTML / CSS",
+            "Microsoft Word / PDF",
+        ],
         "competencia": [
             "Elabora manuales técnicos del sistema, contribuye diccionario de datos, crea manual de usuario, documenta procesos con DFD, usa UML para modelación.",
             "Propone ideas de proyectos software, visualiza oportunidades de negocio, desarrolla habilidades de venta, busca recursos tecnológicos.",
@@ -70,7 +95,25 @@ MODULOS = {
             "porque no existe la documentación necesaria."
         ),
     },
-    "modulo4": {"titulo": "Módulo 3.8", "nombre": "Módulo 4", "duracion": "—", "objetivos": "Contenido pendiente.", "situacion": "Contenido pendiente."},
+    "modulo4": {
+        "titulo": "Módulo 3.8",
+        "nombre": "Módulo 4",
+        "duracion": "—",
+        "herramientas": [
+            "Node.js / npm",
+            "TypeScript",
+            "Vite",
+            "Vitest",
+            "ESLint",
+            "Python",
+            "Flask",
+            "Jinja2",
+            "Git & GitHub Pages",
+            "HTML / CSS",
+        ],
+        "objetivos": "Contenido pendiente.",
+        "situacion": "Contenido pendiente.",
+    },
 }
 
 

@@ -7,6 +7,16 @@
         <h3>Duración</h3>
         <p>{{ data.duracion }}</p>
     </div>
+    {% if data.herramientas %}
+    <div class="panel">
+        <h3>Herramientas utilizadas</h3>
+        <ul class="comp-list">
+            {% for h in data.herramientas %}
+            <li>{{ h }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
     {% if data.competencia %}
     <div class="panel">
         <h3>Competencia</h3>
