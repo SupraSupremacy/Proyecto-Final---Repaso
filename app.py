@@ -6,9 +6,45 @@ app = Flask(__name__)
 STATIC_BUILD = os.environ.get("STATIC_BUILD") == "1"
 
 
+@app.template_filter("slugify")
+def slugify(value):
+    import unicodedata, re
+    text = unicodedata.normalize("NFKD", str(value or ""))
+    text = text.encode("ascii", "ignore").decode("ascii")
+    text = re.sub(r"[^a-zA-Z0-9]+", "-", text).strip("-").lower()
+    return text or "tool"
+
+
+TOOL_INFO = {
+    "Visual Studio": "IDE para desarrollar, depurar, compilar y desplegar aplicaciones; incluye diseñador visual, IntelliSense y gestión de proyectos.",
+    ".NET Framework 4.8": "Runtime y librerías base de Microsoft para ejecutar aplicaciones Windows y servicios sobre CLR.",
+    "Windows Forms": "Framework de interfaz gráfica para aplicaciones de escritorio Windows, basado en controles y eventos.",
+    "ADO.NET (System.Data)": "Conjunto de clases para acceder a datos: conexiones, comandos, adaptadores y conjuntos de datos.",
+    "MSBuild": "Motor de compilación que procesa archivos de proyecto para compilar, empaquetar y publicar soluciones.",
+    "Microsoft Access": "Sistema gestor de bases de datos de escritorio para crear tablas, consultas, formularios e informes.",
+    "SQL (MySQL / SQL Server)": "Lenguaje para definir, consultar y administrar bases de datos relacionales (DDL/DML).",
+    "Power BI": "Herramienta de inteligencia de negocios para modelar datos y crear dashboards e informes interactivos.",
+    "Microsoft Excel": "Hoja de cálculo para análisis, fórmulas, tablas dinámicas, gráficos e intercambio de datos.",
+    "HTML / CSS": "Lenguajes de marcado y estilo para estructurar y presentar contenido en páginas web.",
+    "Windows Batch (backups)": "Script de comandos para automatizar tareas del sistema operativo, como respaldos y copias.",
+    "WPF (XAML)": "Framework de UI para apps de escritorio Windows con diseño declarativo XAML y enlace de datos.",
+    "Microsoft Word / PDF": "Herramientas para redactar documentación y exportar a PDF con formato fijo.",
+    "Node.js / npm": "Entorno de ejecución de JavaScript y gestor de paquetes para dependencias y scripts de build.",
+    "TypeScript": "Superset tipado de JavaScript que se compila a JavaScript para mejorar mantenibilidad y detección de errores.",
+    "Vite": "Servidor de desarrollo rápido y empaquetador moderno para aplicaciones web frontend.",
+    "Vitest": "Corredor de pruebas unitarias integrado con Vite para validar componentes y lógica.",
+    "ESLint": "Analizador estático de código para detectar errores y aplicar reglas de calidad/estilo.",
+    "Python": "Lenguaje de propósito general usado para scripting, backends, automatización y procesamiento de datos.",
+    "Flask": "Microframework web para Python para crear aplicaciones y APIs HTTP.",
+    "Jinja2": "Motor de plantillas para generar HTML dinámico usando variables, filtros y estructuras de control.",
+    "Git & GitHub Pages": "Control de versiones y plataforma para publicar sitios estáticos desde un repositorio.",
+    "C#": "Lenguaje de programación orientado a objetos del ecosistema .NET.",
+}
+
+
 @app.context_processor
 def inject_build_flags():
-    return {"static_build": STATIC_BUILD}
+    return {"static_build": STATIC_BUILD, "tool_info": TOOL_INFO}
 
 
 MODULOS = {
@@ -157,6 +193,7 @@ def module_records():
             "objetivos": m.get("objetivos", ""),
             "situacion": m.get("situacion", ""),
             "herramientas": m.get("herramientas", []),
+            "definiciones": [TOOL_INFO.get(h, "") for h in m.get("herramientas", [])],
             "url": (slug + ".html") if STATIC_BUILD else ("/" + slug),
         })
     return out

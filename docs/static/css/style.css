@@ -177,3 +177,9 @@ h1.glitch::after { color: var(--neon-teal); animation: glitch-2 2.5s infinite; c
 .sr-snippet { color: var(--text); font-size: 0.8rem; display: block; margin-top: 6px; line-height: 1.4; }
 .sr-empty { padding: 12px 14px; color: var(--muted); }
 .scroll-progress { position: fixed; top: 0; left: 0; height: 4px; width: 0%; z-index: 300; background: var(--grad-runners); box-shadow: 0 0 12px rgba(0,255,159,0.6); transition: width .1s linear; pointer-events: none; }
+.tool-link { color: var(--neon-cyan); text-decoration: none; }
+.tool-link:hover { text-shadow: 0 0 8px var(--neon-cyan); }
+.tool-def { scroll-margin-top: 90px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+.tool-def:last-child { border-bottom: none; }
+.tool-def h4 { color: var(--neon-lime); margin-bottom: 6px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; }
+.tool-def p { color: var(--text); line-height: 1.6; font-size: 0.95rem; }

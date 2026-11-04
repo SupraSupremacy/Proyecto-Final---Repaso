@@ -30,9 +30,18 @@
         <h3>Herramientas utilizadas</h3>
         <ul class="comp-list">
             {% for h in data.herramientas %}
-            <li>{{ h }}</li>
+            <li><a href="#tool-{{ h|slugify }}" class="tool-link">{{ h }}</a></li>
             {% endfor %}
         </ul>
+    </div>
+    <div class="panel">
+        <h3>Definiciones y funciones de las herramientas</h3>
+        {% for h in data.herramientas %}
+        <article id="tool-{{ h|slugify }}" class="tool-def">
+            <h4>{{ h }}</h4>
+            <p>{{ tool_info.get(h, "Definición pendiente.") }}</p>
+        </article>
+        {% endfor %}
     </div>
     {% endif %}
     <div class="panel">
