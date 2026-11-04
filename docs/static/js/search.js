@@ -120,7 +120,7 @@ if (input && results && filterModule && filterTool) {
         .then((data) => {
             modules = data;
             populateFilters();
-            renderResults();
+            results.hidden = true;
         })
         .catch(() => {
             results.innerHTML = '<div class="sr-empty">No se pudieron cargar los datos</div>';
