@@ -97,8 +97,8 @@ MODULOS = {
     },
     "modulo4": {
         "titulo": "Módulo 3.8",
-        "nombre": "Módulo 4",
-        "duracion": "—",
+        "nombre": "Proyecto innovador de desarrollo de software",
+        "duracion": "3 Semanas",
         "herramientas": [
             "Node.js / npm",
             "TypeScript",
@@ -111,8 +111,21 @@ MODULOS = {
             "Git & GitHub Pages",
             "HTML / CSS",
         ],
-        "objetivos": "Contenido pendiente.",
-        "situacion": "Contenido pendiente.",
+        "objetivos": (
+            "Desarrollar las competencias que permitan la creación de aplicaciones de "
+            "software orientadas a la producción de información gerencial para la toma de "
+            "decisiones acertadas y confiables dentro de una empresa o entidad."
+        ),
+        "competencia": (
+            "Desarrollar aplicaciones de software orientadas a la información general para "
+            "la toma de decisiones acertadas y confiables en una empresa o entidad."
+        ),
+        "situacion": (
+            "Ciertas empresas toman decisiones erróneas basadas en información no "
+            "confiable debido a la carencia de sistemas de información general, lo cual "
+            "provoca altas pérdidas financieras y disminución en oportunidades de negocio "
+            "tanto a nivel nacional como internacional."
+        ),
     },
 }
 
