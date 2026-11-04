@@ -176,3 +176,4 @@ h1.glitch::after { color: var(--neon-teal); animation: glitch-2 2.5s infinite; c
 .sr-name { color: var(--muted); font-size: 0.85rem; display: block; margin-top: 2px; }
 .sr-snippet { color: var(--text); font-size: 0.8rem; display: block; margin-top: 6px; line-height: 1.4; }
 .sr-empty { padding: 12px 14px; color: var(--muted); }
+.scroll-progress { position: fixed; top: 0; left: 0; height: 4px; width: 0%; z-index: 300; background: var(--grad-runners); box-shadow: 0 0 12px rgba(0,255,159,0.6); transition: width .1s linear; pointer-events: none; }

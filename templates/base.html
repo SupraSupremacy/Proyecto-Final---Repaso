@@ -11,6 +11,7 @@
     {% endif %}
 </head>
 <body>
+    <div id="scrollProgress" class="scroll-progress"></div>
     <header class="cyber-header">
         <div class="header-inner">
             <span class="logo">NEON<span class="accent">CORE</span></span>
@@ -44,8 +45,10 @@
     </footer>
     {% if static_build %}
     <script src="static/js/search.js" defer></script>
+    <script src="static/js/scroll-progress.js" defer></script>
     {% else %}
     <script src="{{ url_for('static', filename='js/search.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/scroll-progress.js') }}" defer></script>
     {% endif %}
 </body>
 </html>
