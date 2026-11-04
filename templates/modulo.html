@@ -7,16 +7,6 @@
         <h3>Duración</h3>
         <p>{{ data.duracion }}</p>
     </div>
-    {% if data.herramientas %}
-    <div class="panel">
-        <h3>Herramientas utilizadas</h3>
-        <ul class="comp-list">
-            {% for h in data.herramientas %}
-            <li>{{ h }}</li>
-            {% endfor %}
-        </ul>
-    </div>
-    {% endif %}
     {% if data.competencia %}
     <div class="panel">
         <h3>Competencia</h3>
@@ -35,6 +25,16 @@
         <h3>Objetivos del módulo</h3>
         <p>{{ data.objetivos }}</p>
     </div>
+    {% if data.herramientas %}
+    <div class="panel">
+        <h3>Herramientas utilizadas</h3>
+        <ul class="comp-list">
+            {% for h in data.herramientas %}
+            <li>{{ h }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
     <div class="panel">
         <h3>Situación problemática</h3>
         <p>{{ data.situacion }}</p>
