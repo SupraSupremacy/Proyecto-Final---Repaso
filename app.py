@@ -77,6 +77,13 @@ MODULOS = {
             "aseguramiento de la operación. Esto genera atrasos en la cadena productiva, "
             "erogación de recursos de manera innecesaria y una mala imagen de la entidad."
         ),
+        "quiz": [
+            {"q": "¿Qué busca ITIL v3 en la operación de TI?", "options": ["Automatizar hardware", "Gestionar servicios con buenas prácticas", "Eliminar todas las incidencias", "Vender software"], "answer": 1},
+            {"q": "Un plan de contingencia se activa ante:", "options": ["Tareas rutinarias", "Interrupciones/crisis del servicio", "Compilación correcta", "Actualización de documentación"], "answer": 1},
+            {"q": "La gestión de incidentes busca principalmente:", "options": ["Restaurar el servicio lo antes posible", "Cambiar la base de datos", "Reescribir el sistema", "Capacitar usuarios"], "answer": 0},
+            {"q": "La disponibilidad se calcula como:", "options": ["tiempo operativo / tiempo total", "tiempo total / tiempo operativo", "incidentes / usuarios", "costos / beneficios"], "answer": 0},
+            {"q": "Las caídas constantes generan:", "options": ["solo ahorro de costos", "atrasos, costos y mala imagen", "mayor seguridad", "mejor documentación"], "answer": 1},
+        ],
     },
     "modulo2": {
         "titulo": "Módulo 3.3",
@@ -105,6 +112,13 @@ MODULOS = {
             "la cadena productiva, malestar en los usuarios internos y externos, erogación de "
             "recursos de manera innecesaria y una mala imagen de la entidad."
         ),
+        "quiz": [
+            {"q": "En SQL, WHERE se usa para:", "options": ["Crear tablas", "Filtrar filas", "Eliminar base de datos", "Definir claves"], "answer": 1},
+            {"q": "La propiedad 'Atomicidad' de ACID significa:", "options": ["La transacción se ejecuta completa o no se ejecuta", "Los datos se leen rápido", "La base se cifra", "Se crean índices"], "answer": 0},
+            {"q": "Un backup diferencial contiene cambios desde:", "options": ["El primer backup", "El último backup completo", "El último backup incremental", "La última consulta"], "answer": 1},
+            {"q": "En Power BI, DAX se usa para:", "options": ["Diseñar interfaces", "Crear medidas y cálculos", "Compilar código", "Ejecutar backups"], "answer": 1},
+            {"q": "La normalización principalmente:", "options": ["Aumenta la redundancia", "Reduce la redundancia", "Elimina índices", "Cifra datos"], "answer": 1},
+        ],
     },
     "modulo3": {
         "titulo": "Módulo 3.4",
@@ -135,6 +149,13 @@ MODULOS = {
             "El Mantenimiento de sistemas en muchas empresas demora más de lo esperado "
             "porque no existe la documentación necesaria."
         ),
+        "quiz": [
+            {"q": "UML se utiliza para:", "options": ["Escribir código SQL", "Modelar el sistema", "Diseñar hardware", "Crear backups"], "answer": 1},
+            {"q": "Un DFD representa:", "options": ["El flujo de datos y procesos", "La interfaz gráfica", "Los colores del sistema", "El presupuesto del proyecto"], "answer": 0},
+            {"q": "El diccionario de datos sirve para:", "options": ["Ejecutar el sistema", "Definir estructura y significado de campos", "Probar el software", "Eliminar incidencias"], "answer": 1},
+            {"q": "El manual de usuario apoya:", "options": ["La compilación", "La capacitación de nuevas contrataciones", "La creación de índices", "El backup"], "answer": 1},
+            {"q": "POO ayuda a comprender:", "options": ["Solo el hardware", "La arquitectura y elementos del sistema", "El diseño gráfico", "La red"], "answer": 1},
+        ],
     },
     "modulo4": {
         "titulo": "Módulo 3.8",
@@ -167,6 +188,13 @@ MODULOS = {
             "provoca altas pérdidas financieras y disminución en oportunidades de negocio "
             "tanto a nivel nacional como internacional."
         ),
+        "quiz": [
+            {"q": "Un sistema de información general produce:", "options": ["Solo juegos", "Información gerencial para decisiones", "Backups automáticos", "Código fuente"], "answer": 1},
+            {"q": "Decisiones acertadas requieren:", "options": ["Información no confiable", "La carencia de sistemas", "Información confiable y actualizada", "Menos datos"], "answer": 2},
+            {"q": "TypeScript aporta principalmente:", "options": ["Triplicar velocidad", "Tipado estático para detectar errores", "Eliminar pruebas", "Cifrar datos"], "answer": 1},
+            {"q": "Vite se usa para:", "options": ["Gestionar bases de datos", "Desarrollo con HMR y bundling", "Diseñar hardware", "Crear manuales"], "answer": 1},
+            {"q": "Git sirve para:", "options": ["Compilar .NET", "Control de versiones", "Crear dashboards", "Ejecutar pruebas unitarias"], "answer": 1},
+        ],
     },
 }
 

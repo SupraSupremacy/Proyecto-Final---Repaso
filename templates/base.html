@@ -60,10 +60,12 @@
     {% if static_build %}
     <script src="static/js/theme.js" defer></script>
     <script src="static/js/search.js" defer></script>
+    <script src="static/js/quiz.js" defer></script>
     <script src="static/js/scroll-progress.js" defer></script>
     {% else %}
     <script src="{{ url_for('static', filename='js/theme.js') }}" defer></script>
     <script src="{{ url_for('static', filename='js/search.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/quiz.js') }}" defer></script>
     <script src="{{ url_for('static', filename='js/scroll-progress.js') }}" defer></script>
     {% endif %}
 </body>

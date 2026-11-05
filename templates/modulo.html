@@ -55,5 +55,26 @@
         <h3>Situación problemática</h3>
         <p>{{ data.situacion }}</p>
     </div>
+    {% if data.quiz %}
+    <div class="panel quiz-panel" id="modulo-quiz">
+        <h3>Quiz de repaso</h3>
+        <form id="quizForm">
+            {% for item in data.quiz %}
+            {% set question_index = loop.index0 %}
+            <fieldset class="quiz-q" data-answer="{{ item.answer }}">
+                <legend>{{ loop.index }}. {{ item.q }}</legend>
+                {% for option in item.options %}
+                <label class="quiz-option"><input type="radio" name="question-{{ question_index }}" value="{{ loop.index0 }}"> {{ option }}</label>
+                {% endfor %}
+            </fieldset>
+            {% endfor %}
+            <div class="quiz-actions">
+                <button type="button" class="cyber-btn quiz-btn" id="checkQuiz">Ver puntaje</button>
+                <button type="button" class="cyber-btn quiz-btn" id="resetQuiz">Reiniciar</button>
+            </div>
+            <p id="quizResult" class="quiz-result" aria-live="polite"></p>
+        </form>
+    </div>
+    {% endif %}
 </section>
 {% endblock %}

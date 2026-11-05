@@ -164,6 +164,89 @@
         <h3>Situación problemática</h3>
         <p>Las caídas constantes en los sistemas informáticos no se tienen mitigadas debido a que no se cuenta con un área que se encargue del mantenimiento y aseguramiento de la operación. Esto genera atrasos en la cadena productiva, erogación de recursos de manera innecesaria y una mala imagen de la entidad.</p>
     </div>
+    
+    <div class="panel quiz-panel" id="modulo-quiz">
+        <h3>Quiz de repaso</h3>
+        <form id="quizForm">
+            
+            
+            <fieldset class="quiz-q" data-answer="1">
+                <legend>1. ¿Qué busca ITIL v3 en la operación de TI?</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-0" value="0"> Automatizar hardware</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-0" value="1"> Gestionar servicios con buenas prácticas</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-0" value="2"> Eliminar todas las incidencias</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-0" value="3"> Vender software</label>
+                
+            </fieldset>
+            
+            
+            <fieldset class="quiz-q" data-answer="1">
+                <legend>2. Un plan de contingencia se activa ante:</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-1" value="0"> Tareas rutinarias</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-1" value="1"> Interrupciones/crisis del servicio</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-1" value="2"> Compilación correcta</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-1" value="3"> Actualización de documentación</label>
+                
+            </fieldset>
+            
+            
+            <fieldset class="quiz-q" data-answer="0">
+                <legend>3. La gestión de incidentes busca principalmente:</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-2" value="0"> Restaurar el servicio lo antes posible</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-2" value="1"> Cambiar la base de datos</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-2" value="2"> Reescribir el sistema</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-2" value="3"> Capacitar usuarios</label>
+                
+            </fieldset>
+            
+            
+            <fieldset class="quiz-q" data-answer="0">
+                <legend>4. La disponibilidad se calcula como:</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-3" value="0"> tiempo operativo / tiempo total</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-3" value="1"> tiempo total / tiempo operativo</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-3" value="2"> incidentes / usuarios</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-3" value="3"> costos / beneficios</label>
+                
+            </fieldset>
+            
+            
+            <fieldset class="quiz-q" data-answer="1">
+                <legend>5. Las caídas constantes generan:</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-4" value="0"> solo ahorro de costos</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-4" value="1"> atrasos, costos y mala imagen</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-4" value="2"> mayor seguridad</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-4" value="3"> mejor documentación</label>
+                
+            </fieldset>
+            
+            <div class="quiz-actions">
+                <button type="button" class="cyber-btn quiz-btn" id="checkQuiz">Ver puntaje</button>
+                <button type="button" class="cyber-btn quiz-btn" id="resetQuiz">Reiniciar</button>
+            </div>
+            <p id="quizResult" class="quiz-result" aria-live="polite"></p>
+        </form>
+    </div>
+    
 </section>
 
     </main>
@@ -173,6 +256,7 @@
     
     <script src="static/js/theme.js" defer></script>
     <script src="static/js/search.js" defer></script>
+    <script src="static/js/quiz.js" defer></script>
     <script src="static/js/scroll-progress.js" defer></script>
     
 </body>
