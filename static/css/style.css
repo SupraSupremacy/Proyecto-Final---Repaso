@@ -195,18 +195,18 @@ h1.glitch::after { color: var(--neon-teal); animation: glitch-2 2.5s infinite; c
 .theme-toggle:hover { border-color: var(--neon-green); box-shadow: 0 0 10px rgba(0,255,159,0.25); }
 
 html[data-theme="light"] {
-    --bg: #fff8e1;
-    --bg2: #fff2c7;
-    --deep: #ffe9a8;
+    --bg: #fff9cf;
+    --bg2: #fff2a6;
+    --deep: #ffe16a;
     --neon-green: #9a7209;
-    --neon-lime: #856500;
-    --neon-yellow: #7a5f00;
-    --neon-teal: #7c6400;
-    --accent-hot: #b38f00;
-    --text: #2b2100;
-    --muted: #7a6a35;
-    --border: #e6d39a;
-    --grad-runners: linear-gradient(120deg, #b38f00 0%, #d6a800 50%, #f0c93a 100%);
+    --neon-lime: #8a6600;
+    --neon-yellow: #c9a000;
+    --neon-teal: #8a6600;
+    --accent-hot: #e6c200;
+    --text: #241b00;
+    --muted: #6e5c1a;
+    --border: #e4cf78;
+    --grad-runners: linear-gradient(120deg, #c9a000 0%, #e6c200 50%, #ffe600 100%);
 }
 html[data-theme="light"] .cyber-header {
     background: linear-gradient(90deg, rgba(255,248,225,0.96), rgba(255,242,199,0.96));
