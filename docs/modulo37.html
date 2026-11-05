@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function () {
+            try {
+                var theme = localStorage.getItem('theme');
+                if (!theme && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                    theme = 'light';
+                }
+                if (theme === 'light' || theme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', theme);
+                }
+            } catch (e) {}
+        })();
+    </script>
+    <title>Módulo 3.7 - Repaso de Módulos</title>
+    
+    <link rel="stylesheet" href="static/css/style.css">
+    
+</head>
+<body>
+    <div id="scrollProgress" class="scroll-progress"></div>
+    <header class="cyber-header">
+        <div class="header-inner">
+            <span class="logo">NEON<span class="accent">CORE</span></span>
+            <nav class="cyber-nav">
+                
+                <a href="index.html" class="nav-link ">Menú Principal</a>
+                
+                <a href="modulo31.html" class="nav-link ">Módulo 3.1</a>
+                
+                <a href="modulo1.html" class="nav-link ">Módulo 1</a>
+                
+                <a href="modulo2.html" class="nav-link ">Módulo 3.3</a>
+                
+                <a href="modulo3.html" class="nav-link ">Módulo 3.4</a>
+                
+                <a href="modulo35.html" class="nav-link ">Módulo 3.5</a>
+                
+                <a href="modulo36.html" class="nav-link ">Módulo 3.6</a>
+                
+                <a href="modulo37.html" class="nav-link active">Módulo 3.7</a>
+                
+                <a href="modulo4.html" class="nav-link ">Módulo 3.8</a>
+                
+                
+            </nav>
+            <button id="themeToggle" class="theme-toggle" type="button" aria-label="Cambiar tema">◐</button>
+            <div class="search-wrap">
+                <input id="searchInput" type="search" class="search-input" placeholder="Buscar en módulos..." autocomplete="off">
+                <select id="filterModule" class="search-select"><option value="">Todos los módulos</option></select>
+                <select id="filterTool" class="search-select"><option value="">Todas las herramientas</option></select>
+                <div id="searchResults" class="search-results" hidden></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+<section class="modulo">
+    <h1 class="glitch" data-text="Módulo 3.7">Módulo 3.7</h1>
+    <p class="kicker">// Módulo 3.7 &mdash; Programación concurrente y móvil con .NET MAUI</p>
+    <div class="panel">
+        <h3>Duración</h3>
+        <p>12 semanas</p>
+    </div>
+    
+    
+    
+    <div class="panel">
+        <h3>Herramientas utilizadas</h3>
+        <ul class="comp-list">
+            
+            <li><a href="#tool-visual-studio" class="tool-link">Visual Studio</a></li>
+            
+            <li><a href="#tool-c" class="tool-link">C#</a></li>
+            
+            <li><a href="#tool-net-10-net-maui" class="tool-link">.NET 10 (.NET MAUI)</a></li>
+            
+            <li><a href="#tool-xaml" class="tool-link">XAML</a></li>
+            
+            <li><a href="#tool-async-await" class="tool-link">async / await</a></li>
+            
+            <li><a href="#tool-task-parallel-library-tpl" class="tool-link">Task Parallel Library (TPL)</a></li>
+            
+            <li><a href="#tool-data-binding-maui" class="tool-link">Data Binding (MAUI)</a></li>
+            
+            <li><a href="#tool-android-emulator" class="tool-link">Android Emulator</a></li>
+            
+        </ul>
+    </div>
+    <div class="panel">
+        <h3>Definiciones y funciones de las herramientas</h3>
+        
+        <article id="tool-visual-studio" class="tool-def">
+            <h4>Visual Studio</h4>
+            <p>IDE para desarrollar, depurar, compilar y desplegar aplicaciones; incluye diseñador visual, IntelliSense y gestión de proyectos.</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Crear soluciones, diseñar formularios, compilar, depurar con breakpoints y administrar referencias.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>Visual Studio organiza el proyecto en solución, proyecto, formularios y código. Se aprende a validar entradas, separar lógica por eventos y depurar paso a paso para encontrar estados incorrectos. En la práctica, esto ayudó a construir interfaces WinForms con DataGridView y botones, evitando duplicar lógica y detectando valores nulos antes de guardar. También se usó para configurar compilación en Debug/Release y revisar referencias externas.</p>
+            </details>
+        </article>
+        
+        <article id="tool-c" class="tool-def">
+            <h4>C#</h4>
+            <p>Lenguaje de programación orientado a objetos del ecosistema .NET.</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Sintaxis, clases, eventos, validaciones, manejo de excepciones y programación orientada a objetos.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>C# permitió modelar clases y métodos para el aplicativo, encapsular datos y responder a eventos de la interfaz. Se practicó validación, conversión de tipos, recorridos de colecciones y manejo de excepciones. La curva incluyó pasar de scripts simples a un proyecto con múltiples archivos, manteniendo responsabilidades separadas y usando métodos reutilizables para cálculos.</p>
+            </details>
+        </article>
+        
+        <article id="tool-net-10-net-maui" class="tool-def">
+            <h4>.NET 10 (.NET MAUI)</h4>
+            <p>Framework multiplataforma para crear apps nativas de Android, iOS, macOS y Windows compartiendo código.</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Compartir código y XAML entre plataformas y generar builds Android/iOS/Windows.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>Se desarrollaron apps multiplataforma compartiendo XAML y C#. Se aprendió a configurar targets Android/iOS/Windows y resolver diferencias de plataforma. La práctica incluyó layouts, controles, navegación y pruebas en emuladores. También se gestionaron recursos y assets.</p>
+            </details>
+        </article>
+        
+        <article id="tool-xaml" class="tool-def">
+            <h4>XAML</h4>
+            <p>Lenguaje de marcado declarativo para definir interfaces, recursos, estilos y data binding.</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Diseñar interfaces, layouts, recursos, estilos y enlaces de datos.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>Se definió la UI de forma declarativa con layouts, recursos, estilos y enlace de datos. Se aprendió la jerarquía de controles y el ciclo de renderizado. La práctica incluyó layouts Grid/Stack/Flex/Absolute y páginas navegables. También se corrigieron problemas de espacio y alineación.</p>
+            </details>
+        </article>
+        
+        <article id="tool-async-await" class="tool-def">
+            <h4>async / await</h4>
+            <p>Construcciones de C# para ejecutar tareas asíncronas sin bloquear el hilo de la interfaz.</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Programar operaciones sin bloquear la interfaz y mantener datos de estado seguros.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>Se implementaron operaciones sin bloquear la interfaz. Se aprendió a propagar await, manejar tareas y mantener estado consistente. La práctica incluyó medir tiempos y mostrar resultados en pantalla.</p>
+            </details>
+        </article>
+        
+        <article id="tool-task-parallel-library-tpl" class="tool-def">
+            <h4>Task Parallel Library (TPL)</h4>
+            <p>API de tareas y concurrencia para paralelismo, asincronía y continuaciones en .NET.</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Crear, encadenar y esperar tareas concurrentes controlando errores.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>Se crearon tareas y se coordinó su ejecución con Task.Run, Task.WhenAll y continuaciones. Se aprendió a capturar y mostrar errores. La práctica incluyó sincronizar datos y evitar bloqueos.</p>
+            </details>
+        </article>
+        
+        <article id="tool-data-binding-maui" class="tool-def">
+            <h4>Data Binding (MAUI)</h4>
+            <p>Enlace entre propiedades de datos y la UI para actualizar la vista automáticamente.</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Conectar modelos de datos con controles XAML para actualización automática.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>Se enlazaron propiedades de modelos con controles XAML. Se aprendió a usar INotifyPropertyChanged y actualización automática. La práctica incluyó formularios, listas y resultados en tiempo real.</p>
+            </details>
+        </article>
+        
+        <article id="tool-android-emulator" class="tool-def">
+            <h4>Android Emulator</h4>
+            <p>Emulador Android para probar la app sin dispositivo físico durante el desarrollo.</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Probar comportamiento, layouts y eventos en Android sin dispositivo físico.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>Se probó la app en un dispositivo virtual Android para validar flujo, layouts y eventos. Se aprendió a lanzar emulador, desplegar y leer logs. La práctica incluyó detectar fallos de UI y ciclo de vida.</p>
+            </details>
+        </article>
+        
+    </div>
+    
+    
+    
+    <div class="panel quiz-panel" id="modulo-quiz">
+        <h3>Quiz de repaso</h3>
+        <form id="quizForm">
+            
+            
+            <fieldset class="quiz-q" data-answer="1">
+                <legend>1. async/await sirve para:</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-0" value="0"> Bloquear la UI</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-0" value="1"> Ejecutar tareas sin bloquear</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-0" value="2"> Crear tablas</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-0" value="3"> Diseñar XAML</label>
+                
+            </fieldset>
+            
+            
+            <fieldset class="quiz-q" data-answer="1">
+                <legend>2. Task representa:</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-1" value="0"> Un color</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-1" value="1"> Una operación asíncrona</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-1" value="2"> Una base de datos</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-1" value="3"> Un archivo</label>
+                
+            </fieldset>
+            
+            
+            <fieldset class="quiz-q" data-answer="1">
+                <legend>3. Data binding en MAUI permite:</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-2" value="0"> Solo estilos</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-2" value="1"> Sincronizar datos y vistas</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-2" value="2"> Eliminar tareas</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-2" value="3"> Compilar</label>
+                
+            </fieldset>
+            
+            
+            <fieldset class="quiz-q" data-answer="1">
+                <legend>4. Tras un await, la UI suele:</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-3" value="0"> Bloquearse siempre</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-3" value="1"> Continuar cuando la tarea termina</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-3" value="2"> Cerrar la app</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-3" value="3"> Perder estado</label>
+                
+            </fieldset>
+            
+            
+            <fieldset class="quiz-q" data-answer="1">
+                <legend>5. La concurrencia ayuda a:</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-4" value="0"> Más bloqueos</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-4" value="1"> Mejorar responsividad</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-4" value="2"> Eliminar validaciones</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-4" value="3"> Reducir memoria</label>
+                
+            </fieldset>
+            
+            <div class="quiz-actions">
+                <button type="button" class="cyber-btn quiz-btn" id="checkQuiz">Ver puntaje</button>
+                <button type="button" class="cyber-btn quiz-btn" id="resetQuiz">Reiniciar</button>
+            </div>
+            <p id="quizResult" class="quiz-result" aria-live="polite"></p>
+        </form>
+    </div>
+    
+</section>
+
+    </main>
+    <footer class="cyber-footer">
+        <span>© 2026 NEONCORE SYS // BOOT SEQUENCE COMPLETE</span>
+    </footer>
+    
+    <script src="static/js/theme.js" defer></script>
+    <script src="static/js/search.js" defer></script>
+    <script src="static/js/quiz.js" defer></script>
+    <script src="static/js/scroll-progress.js" defer></script>
+    
+</body>
+</html>

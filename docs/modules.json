@@ -191,5 +191,193 @@
       "Se usaron HTML semántico y CSS para estructurar páginas, estilos, navegación, cards y layouts responsive. En la práctica se aplicaron grids, sticky header, animaciones CSS y componentes reutilizables para páginas de trabajo e informes."
     ],
     "url": "modulo4.html"
+  },
+  {
+    "slug": "modulo31",
+    "title": "Módulo 3.1",
+    "nombre": "Desarrollo web con ASP.NET y C#",
+    "duracion": "8 semanas",
+    "competencia": "",
+    "objetivos": "",
+    "situacion": "",
+    "herramientas": [
+      "Visual Studio",
+      "C#",
+      "ASP.NET Web Forms",
+      ".NET Framework 4.8",
+      "HTML / CSS",
+      "IIS Express"
+    ],
+    "definiciones": [
+      "IDE para desarrollar, depurar, compilar y desplegar aplicaciones; incluye diseñador visual, IntelliSense y gestión de proyectos.",
+      "Lenguaje de programación orientado a objetos del ecosistema .NET.",
+      "Framework web clásico de .NET basado en controles de servidor, postback y páginas .aspx para construir aplicaciones web.",
+      "Runtime y librerías base de Microsoft para ejecutar aplicaciones Windows y servicios sobre CLR.",
+      "Lenguajes de marcado y estilo para estructurar y presentar contenido en páginas web.",
+      "Servidor web local para desarrollo y prueba de aplicaciones ASP.NET durante la depuración."
+    ],
+    "aprendizajes": [
+      "Crear soluciones, diseñar formularios, compilar, depurar con breakpoints y administrar referencias.",
+      "Sintaxis, clases, eventos, validaciones, manejo de excepciones y programación orientada a objetos.",
+      "Trabajar con páginas .aspx, controles de servidor, postback, cookies y sesiones para estado web.",
+      "Trabajar con ensamblados, namespaces, configuración de proyecto y compilaciones Debug/Release.",
+      "Estructurar contenido semántico, estilos, layouts responsive y componentes visuales.",
+      "Levantar y depurar aplicaciones web ASP.NET localmente desde Visual Studio."
+    ],
+    "profundidades": [
+      "Visual Studio organiza el proyecto en solución, proyecto, formularios y código. Se aprende a validar entradas, separar lógica por eventos y depurar paso a paso para encontrar estados incorrectos. En la práctica, esto ayudó a construir interfaces WinForms con DataGridView y botones, evitando duplicar lógica y detectando valores nulos antes de guardar. También se usó para configurar compilación en Debug/Release y revisar referencias externas.",
+      "C# permitió modelar clases y métodos para el aplicativo, encapsular datos y responder a eventos de la interfaz. Se practicó validación, conversión de tipos, recorridos de colecciones y manejo de excepciones. La curva incluyó pasar de scripts simples a un proyecto con múltiples archivos, manteniendo responsabilidades separadas y usando métodos reutilizables para cálculos.",
+      "Se practicó la construcción de aplicaciones web con controles de servidor y eventos de postback. Se trabajó con cookies, sesión, arrays y URLs para mantener estado del usuario. La curva incluyó comprender el ciclo de vida de la página y evitar dependencias sólo del lado cliente. También se validó entradas antes de procesarlas.",
+      "Se comprendió el rol del CLR, los ensamblados y la configuración App.config al compilar un proyecto WinForms. El trabajo con assemblies y referencias ayudó a resolver errores de compilación y a entender dependencias. También se vio cómo el mismo código puede ejecutarse en modo Debug para inspección y Release para entrega final.",
+      "Se usaron HTML semántico y CSS para estructurar páginas, estilos, navegación, cards y layouts responsive. En la práctica se aplicaron grids, sticky header, animaciones CSS y componentes reutilizables para páginas de trabajo e informes.",
+      "IIS Express permitió ejecutar y depurar localmente las páginas .aspx desde Visual Studio. Se aprendió a configurar el sitio, launch profiles y puertos. La práctica incluyó probar requests, postbacks y persistencia de sesión. Sirvió para validar el comportamiento antes de publicar."
+    ],
+    "url": "modulo31.html"
+  },
+  {
+    "slug": "modulo35",
+    "title": "Módulo 3.5",
+    "nombre": "Desarrollo en capas con ASP.NET Core",
+    "duracion": "12 semanas",
+    "competencia": "",
+    "objetivos": "",
+    "situacion": "",
+    "herramientas": [
+      "Visual Studio",
+      "C#",
+      ".NET 10 (ASP.NET Core)",
+      "ASP.NET Core MVC / Razor Pages",
+      ".NET Framework 4.8",
+      "SQL (MySQL / SQL Server)",
+      "HTML / CSS"
+    ],
+    "definiciones": [
+      "IDE para desarrollar, depurar, compilar y desplegar aplicaciones; incluye diseñador visual, IntelliSense y gestión de proyectos.",
+      "Lenguaje de programación orientado a objetos del ecosistema .NET.",
+      "Runtime y framework web moderno para crear APIs, MVC y Razor Pages multiplataforma.",
+      "Patrones de desarrollo web para estructurar controllers/views o páginas centradas en handlers y UI.",
+      "Runtime y librerías base de Microsoft para ejecutar aplicaciones Windows y servicios sobre CLR.",
+      "Lenguaje para definir, consultar y administrar bases de datos relacionales (DDL/DML).",
+      "Lenguajes de marcado y estilo para estructurar y presentar contenido en páginas web."
+    ],
+    "aprendizajes": [
+      "Crear soluciones, diseñar formularios, compilar, depurar con breakpoints y administrar referencias.",
+      "Sintaxis, clases, eventos, validaciones, manejo de excepciones y programación orientada a objetos.",
+      "Configurar apps modernas, middleware, routing y ejecución en diferentes entornos.",
+      "Estructurar vistas, controladores/handlers, modelos y flujo de peticiones HTTP.",
+      "Trabajar con ensamblados, namespaces, configuración de proyecto y compilaciones Debug/Release.",
+      "Crear bases y tablas, CRUD, filtros, JOIN, funciones, procedimientos, triggers y transacciones.",
+      "Estructurar contenido semántico, estilos, layouts responsive y componentes visuales."
+    ],
+    "profundidades": [
+      "Visual Studio organiza el proyecto en solución, proyecto, formularios y código. Se aprende a validar entradas, separar lógica por eventos y depurar paso a paso para encontrar estados incorrectos. En la práctica, esto ayudó a construir interfaces WinForms con DataGridView y botones, evitando duplicar lógica y detectando valores nulos antes de guardar. También se usó para configurar compilación en Debug/Release y revisar referencias externas.",
+      "C# permitió modelar clases y métodos para el aplicativo, encapsular datos y responder a eventos de la interfaz. Se practicó validación, conversión de tipos, recorridos de colecciones y manejo de excepciones. La curva incluyó pasar de scripts simples a un proyecto con múltiples archivos, manteniendo responsabilidades separadas y usando métodos reutilizables para cálculos.",
+      "Se configuraron proyectos web modernos, middleware, routing y entornos de desarrollo/producción. Se aprendió a separar modelos, vistas y lógica de negocio. La práctica incluyó compilar y ejecutar APIs/controladores. También se validó la configuración por entorno.",
+      "Se estructuraron vistas, controladores o handlers con modelos y validaciones. Se practicó el flujo petición/respuesta, bindings a formularios y redirecciones. La curva incluyó manejar errores y estados de modelo. También se separó la presentación de la lógica de negocio.",
+      "Se comprendió el rol del CLR, los ensamblados y la configuración App.config al compilar un proyecto WinForms. El trabajo con assemblies y referencias ayudó a resolver errores de compilación y a entender dependencias. También se vio cómo el mismo código puede ejecutarse en modo Debug para inspección y Release para entrega final.",
+      "Los scripts cubrieron DDL, DML, filtros, joins, funciones, procedimientos, triggers y transacciones. Se aprendió a crear base desde cero, cargar datos, consultar con operadores requeridos y mantener integridad con ALTER/UPDATE/DELETE. La práctica también incluyó backups, restores y consultas orientadas a dashboard.",
+      "Se usaron HTML semántico y CSS para estructurar páginas, estilos, navegación, cards y layouts responsive. En la práctica se aplicaron grids, sticky header, animaciones CSS y componentes reutilizables para páginas de trabajo e informes."
+    ],
+    "url": "modulo35.html"
+  },
+  {
+    "slug": "modulo36",
+    "title": "Módulo 3.6",
+    "nombre": "Desarrollo multiplataforma con .NET MAUI",
+    "duracion": "12 semanas",
+    "competencia": "",
+    "objetivos": "",
+    "situacion": "",
+    "herramientas": [
+      "Visual Studio",
+      "C#",
+      ".NET 10 (.NET MAUI)",
+      "XAML",
+      "Android SDK",
+      "iOS SDK",
+      "Android Emulator",
+      "iOS Simulator"
+    ],
+    "definiciones": [
+      "IDE para desarrollar, depurar, compilar y desplegar aplicaciones; incluye diseñador visual, IntelliSense y gestión de proyectos.",
+      "Lenguaje de programación orientado a objetos del ecosistema .NET.",
+      "Framework multiplataforma para crear apps nativas de Android, iOS, macOS y Windows compartiendo código.",
+      "Lenguaje de marcado declarativo para definir interfaces, recursos, estilos y data binding.",
+      "Conjunto de herramientas/APIs para compilar y ejecutar aplicaciones Android.",
+      "Conjunto de herramientas/APIs para compilar y ejecutar aplicaciones iOS.",
+      "Emulador Android para probar la app sin dispositivo físico durante el desarrollo.",
+      "Simulador iOS para probar la app sin dispositivo físico durante el desarrollo."
+    ],
+    "aprendizajes": [
+      "Crear soluciones, diseñar formularios, compilar, depurar con breakpoints y administrar referencias.",
+      "Sintaxis, clases, eventos, validaciones, manejo de excepciones y programación orientada a objetos.",
+      "Compartir código y XAML entre plataformas y generar builds Android/iOS/Windows.",
+      "Diseñar interfaces, layouts, recursos, estilos y enlaces de datos.",
+      "Configurar compilación Android y usar APIs del sistema móvil.",
+      "Configurar compilación iOS y usar APIs del sistema móvil.",
+      "Probar comportamiento, layouts y eventos en Android sin dispositivo físico.",
+      "Probar comportamiento, layouts y eventos en iOS sin dispositivo físico."
+    ],
+    "profundidades": [
+      "Visual Studio organiza el proyecto en solución, proyecto, formularios y código. Se aprende a validar entradas, separar lógica por eventos y depurar paso a paso para encontrar estados incorrectos. En la práctica, esto ayudó a construir interfaces WinForms con DataGridView y botones, evitando duplicar lógica y detectando valores nulos antes de guardar. También se usó para configurar compilación en Debug/Release y revisar referencias externas.",
+      "C# permitió modelar clases y métodos para el aplicativo, encapsular datos y responder a eventos de la interfaz. Se practicó validación, conversión de tipos, recorridos de colecciones y manejo de excepciones. La curva incluyó pasar de scripts simples a un proyecto con múltiples archivos, manteniendo responsabilidades separadas y usando métodos reutilizables para cálculos.",
+      "Se desarrollaron apps multiplataforma compartiendo XAML y C#. Se aprendió a configurar targets Android/iOS/Windows y resolver diferencias de plataforma. La práctica incluyó layouts, controles, navegación y pruebas en emuladores. También se gestionaron recursos y assets.",
+      "Se definió la UI de forma declarativa con layouts, recursos, estilos y enlace de datos. Se aprendió la jerarquía de controles y el ciclo de renderizado. La práctica incluyó layouts Grid/Stack/Flex/Absolute y páginas navegables. También se corrigieron problemas de espacio y alineación.",
+      "Se usaron las APIs y herramientas de Android para compilar y ejecutar la app en emulador o dispositivo. Se comprendió configuración de targets, permisos y recursos Android. La práctica incluyó resolver diferencias de plataforma y depurar en Android.",
+      "Se usaron herramientas y APIs de Apple para compilar y probar en simulador o dispositivo. Se comprendió la configuración de targets iOS y recursos. La práctica incluyó validar comportamiento y layouts en iOS.",
+      "Se probó la app en un dispositivo virtual Android para validar flujo, layouts y eventos. Se aprendió a lanzar emulador, desplegar y leer logs. La práctica incluyó detectar fallos de UI y ciclo de vida.",
+      "Se probó la app en un simulador iOS para validar flujo, layouts y eventos. Se aprendió a lanzar simulador, desplegar y depurar. La práctica incluyó verificar compatibilidad visual."
+    ],
+    "url": "modulo36.html"
+  },
+  {
+    "slug": "modulo37",
+    "title": "Módulo 3.7",
+    "nombre": "Programación concurrente y móvil con .NET MAUI",
+    "duracion": "12 semanas",
+    "competencia": "",
+    "objetivos": "",
+    "situacion": "",
+    "herramientas": [
+      "Visual Studio",
+      "C#",
+      ".NET 10 (.NET MAUI)",
+      "XAML",
+      "async / await",
+      "Task Parallel Library (TPL)",
+      "Data Binding (MAUI)",
+      "Android Emulator"
+    ],
+    "definiciones": [
+      "IDE para desarrollar, depurar, compilar y desplegar aplicaciones; incluye diseñador visual, IntelliSense y gestión de proyectos.",
+      "Lenguaje de programación orientado a objetos del ecosistema .NET.",
+      "Framework multiplataforma para crear apps nativas de Android, iOS, macOS y Windows compartiendo código.",
+      "Lenguaje de marcado declarativo para definir interfaces, recursos, estilos y data binding.",
+      "Construcciones de C# para ejecutar tareas asíncronas sin bloquear el hilo de la interfaz.",
+      "API de tareas y concurrencia para paralelismo, asincronía y continuaciones en .NET.",
+      "Enlace entre propiedades de datos y la UI para actualizar la vista automáticamente.",
+      "Emulador Android para probar la app sin dispositivo físico durante el desarrollo."
+    ],
+    "aprendizajes": [
+      "Crear soluciones, diseñar formularios, compilar, depurar con breakpoints y administrar referencias.",
+      "Sintaxis, clases, eventos, validaciones, manejo de excepciones y programación orientada a objetos.",
+      "Compartir código y XAML entre plataformas y generar builds Android/iOS/Windows.",
+      "Diseñar interfaces, layouts, recursos, estilos y enlaces de datos.",
+      "Programar operaciones sin bloquear la interfaz y mantener datos de estado seguros.",
+      "Crear, encadenar y esperar tareas concurrentes controlando errores.",
+      "Conectar modelos de datos con controles XAML para actualización automática.",
+      "Probar comportamiento, layouts y eventos en Android sin dispositivo físico."
+    ],
+    "profundidades": [
+      "Visual Studio organiza el proyecto en solución, proyecto, formularios y código. Se aprende a validar entradas, separar lógica por eventos y depurar paso a paso para encontrar estados incorrectos. En la práctica, esto ayudó a construir interfaces WinForms con DataGridView y botones, evitando duplicar lógica y detectando valores nulos antes de guardar. También se usó para configurar compilación en Debug/Release y revisar referencias externas.",
+      "C# permitió modelar clases y métodos para el aplicativo, encapsular datos y responder a eventos de la interfaz. Se practicó validación, conversión de tipos, recorridos de colecciones y manejo de excepciones. La curva incluyó pasar de scripts simples a un proyecto con múltiples archivos, manteniendo responsabilidades separadas y usando métodos reutilizables para cálculos.",
+      "Se desarrollaron apps multiplataforma compartiendo XAML y C#. Se aprendió a configurar targets Android/iOS/Windows y resolver diferencias de plataforma. La práctica incluyó layouts, controles, navegación y pruebas en emuladores. También se gestionaron recursos y assets.",
+      "Se definió la UI de forma declarativa con layouts, recursos, estilos y enlace de datos. Se aprendió la jerarquía de controles y el ciclo de renderizado. La práctica incluyó layouts Grid/Stack/Flex/Absolute y páginas navegables. También se corrigieron problemas de espacio y alineación.",
+      "Se implementaron operaciones sin bloquear la interfaz. Se aprendió a propagar await, manejar tareas y mantener estado consistente. La práctica incluyó medir tiempos y mostrar resultados en pantalla.",
+      "Se crearon tareas y se coordinó su ejecución con Task.Run, Task.WhenAll y continuaciones. Se aprendió a capturar y mostrar errores. La práctica incluyó sincronizar datos y evitar bloqueos.",
+      "Se enlazaron propiedades de modelos con controles XAML. Se aprendió a usar INotifyPropertyChanged y actualización automática. La práctica incluyó formularios, listas y resultados en tiempo real.",
+      "Se probó la app en un dispositivo virtual Android para validar flujo, layouts y eventos. Se aprendió a lanzar emulador, desplegar y leer logs. La práctica incluyó detectar fallos de UI y ciclo de vida."
+    ],
+    "url": "modulo37.html"
   }
 ]

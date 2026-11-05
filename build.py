@@ -11,7 +11,8 @@ DOCS = ROOT / "docs"
 STATIC_SRC = ROOT / "static"
 STATIC_DST = DOCS / "static"
 
-ROUTES = [("/", "index.html")] + [(f"/modulo{i}", f"modulo{i}.html") for i in range(1, 5)]
+from app import MODULOS
+ROUTES = [("/", "index.html")] + [(f"/{slug}", f"{slug}.html") for slug in MODULOS]
 
 
 def main():

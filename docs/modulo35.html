@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function () {
+            try {
+                var theme = localStorage.getItem('theme');
+                if (!theme && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                    theme = 'light';
+                }
+                if (theme === 'light' || theme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', theme);
+                }
+            } catch (e) {}
+        })();
+    </script>
+    <title>Módulo 3.5 - Repaso de Módulos</title>
+    
+    <link rel="stylesheet" href="static/css/style.css">
+    
+</head>
+<body>
+    <div id="scrollProgress" class="scroll-progress"></div>
+    <header class="cyber-header">
+        <div class="header-inner">
+            <span class="logo">NEON<span class="accent">CORE</span></span>
+            <nav class="cyber-nav">
+                
+                <a href="index.html" class="nav-link ">Menú Principal</a>
+                
+                <a href="modulo31.html" class="nav-link ">Módulo 3.1</a>
+                
+                <a href="modulo1.html" class="nav-link ">Módulo 1</a>
+                
+                <a href="modulo2.html" class="nav-link ">Módulo 3.3</a>
+                
+                <a href="modulo3.html" class="nav-link ">Módulo 3.4</a>
+                
+                <a href="modulo35.html" class="nav-link active">Módulo 3.5</a>
+                
+                <a href="modulo36.html" class="nav-link ">Módulo 3.6</a>
+                
+                <a href="modulo37.html" class="nav-link ">Módulo 3.7</a>
+                
+                <a href="modulo4.html" class="nav-link ">Módulo 3.8</a>
+                
+                
+            </nav>
+            <button id="themeToggle" class="theme-toggle" type="button" aria-label="Cambiar tema">◐</button>
+            <div class="search-wrap">
+                <input id="searchInput" type="search" class="search-input" placeholder="Buscar en módulos..." autocomplete="off">
+                <select id="filterModule" class="search-select"><option value="">Todos los módulos</option></select>
+                <select id="filterTool" class="search-select"><option value="">Todas las herramientas</option></select>
+                <div id="searchResults" class="search-results" hidden></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+<section class="modulo">
+    <h1 class="glitch" data-text="Módulo 3.5">Módulo 3.5</h1>
+    <p class="kicker">// Módulo 3.5 &mdash; Desarrollo en capas con ASP.NET Core</p>
+    <div class="panel">
+        <h3>Duración</h3>
+        <p>12 semanas</p>
+    </div>
+    
+    
+    
+    <div class="panel">
+        <h3>Herramientas utilizadas</h3>
+        <ul class="comp-list">
+            
+            <li><a href="#tool-visual-studio" class="tool-link">Visual Studio</a></li>
+            
+            <li><a href="#tool-c" class="tool-link">C#</a></li>
+            
+            <li><a href="#tool-net-10-asp-net-core" class="tool-link">.NET 10 (ASP.NET Core)</a></li>
+            
+            <li><a href="#tool-asp-net-core-mvc-razor-pages" class="tool-link">ASP.NET Core MVC / Razor Pages</a></li>
+            
+            <li><a href="#tool-net-framework-4-8" class="tool-link">.NET Framework 4.8</a></li>
+            
+            <li><a href="#tool-sql-mysql-sql-server" class="tool-link">SQL (MySQL / SQL Server)</a></li>
+            
+            <li><a href="#tool-html-css" class="tool-link">HTML / CSS</a></li>
+            
+        </ul>
+    </div>
+    <div class="panel">
+        <h3>Definiciones y funciones de las herramientas</h3>
+        
+        <article id="tool-visual-studio" class="tool-def">
+            <h4>Visual Studio</h4>
+            <p>IDE para desarrollar, depurar, compilar y desplegar aplicaciones; incluye diseñador visual, IntelliSense y gestión de proyectos.</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Crear soluciones, diseñar formularios, compilar, depurar con breakpoints y administrar referencias.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>Visual Studio organiza el proyecto en solución, proyecto, formularios y código. Se aprende a validar entradas, separar lógica por eventos y depurar paso a paso para encontrar estados incorrectos. En la práctica, esto ayudó a construir interfaces WinForms con DataGridView y botones, evitando duplicar lógica y detectando valores nulos antes de guardar. También se usó para configurar compilación en Debug/Release y revisar referencias externas.</p>
+            </details>
+        </article>
+        
+        <article id="tool-c" class="tool-def">
+            <h4>C#</h4>
+            <p>Lenguaje de programación orientado a objetos del ecosistema .NET.</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Sintaxis, clases, eventos, validaciones, manejo de excepciones y programación orientada a objetos.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>C# permitió modelar clases y métodos para el aplicativo, encapsular datos y responder a eventos de la interfaz. Se practicó validación, conversión de tipos, recorridos de colecciones y manejo de excepciones. La curva incluyó pasar de scripts simples a un proyecto con múltiples archivos, manteniendo responsabilidades separadas y usando métodos reutilizables para cálculos.</p>
+            </details>
+        </article>
+        
+        <article id="tool-net-10-asp-net-core" class="tool-def">
+            <h4>.NET 10 (ASP.NET Core)</h4>
+            <p>Runtime y framework web moderno para crear APIs, MVC y Razor Pages multiplataforma.</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Configurar apps modernas, middleware, routing y ejecución en diferentes entornos.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>Se configuraron proyectos web modernos, middleware, routing y entornos de desarrollo/producción. Se aprendió a separar modelos, vistas y lógica de negocio. La práctica incluyó compilar y ejecutar APIs/controladores. También se validó la configuración por entorno.</p>
+            </details>
+        </article>
+        
+        <article id="tool-asp-net-core-mvc-razor-pages" class="tool-def">
+            <h4>ASP.NET Core MVC / Razor Pages</h4>
+            <p>Patrones de desarrollo web para estructurar controllers/views o páginas centradas en handlers y UI.</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Estructurar vistas, controladores/handlers, modelos y flujo de peticiones HTTP.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>Se estructuraron vistas, controladores o handlers con modelos y validaciones. Se practicó el flujo petición/respuesta, bindings a formularios y redirecciones. La curva incluyó manejar errores y estados de modelo. También se separó la presentación de la lógica de negocio.</p>
+            </details>
+        </article>
+        
+        <article id="tool-net-framework-4-8" class="tool-def">
+            <h4>.NET Framework 4.8</h4>
+            <p>Runtime y librerías base de Microsoft para ejecutar aplicaciones Windows y servicios sobre CLR.</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Trabajar con ensamblados, namespaces, configuración de proyecto y compilaciones Debug/Release.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>Se comprendió el rol del CLR, los ensamblados y la configuración App.config al compilar un proyecto WinForms. El trabajo con assemblies y referencias ayudó a resolver errores de compilación y a entender dependencias. También se vio cómo el mismo código puede ejecutarse en modo Debug para inspección y Release para entrega final.</p>
+            </details>
+        </article>
+        
+        <article id="tool-sql-mysql-sql-server" class="tool-def">
+            <h4>SQL (MySQL / SQL Server)</h4>
+            <p>Lenguaje para definir, consultar y administrar bases de datos relacionales (DDL/DML).</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Crear bases y tablas, CRUD, filtros, JOIN, funciones, procedimientos, triggers y transacciones.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>Los scripts cubrieron DDL, DML, filtros, joins, funciones, procedimientos, triggers y transacciones. Se aprendió a crear base desde cero, cargar datos, consultar con operadores requeridos y mantener integridad con ALTER/UPDATE/DELETE. La práctica también incluyó backups, restores y consultas orientadas a dashboard.</p>
+            </details>
+        </article>
+        
+        <article id="tool-html-css" class="tool-def">
+            <h4>HTML / CSS</h4>
+            <p>Lenguajes de marcado y estilo para estructurar y presentar contenido en páginas web.</p>
+            
+            <p class="learned"><strong>Lo que aprendimos:</strong> Estructurar contenido semántico, estilos, layouts responsive y componentes visuales.</p>
+            
+            <details class="tool-deep">
+                <summary>Ver a fondo</summary>
+                <p>Se usaron HTML semántico y CSS para estructurar páginas, estilos, navegación, cards y layouts responsive. En la práctica se aplicaron grids, sticky header, animaciones CSS y componentes reutilizables para páginas de trabajo e informes.</p>
+            </details>
+        </article>
+        
+    </div>
+    
+    
+    
+    <div class="panel quiz-panel" id="modulo-quiz">
+        <h3>Quiz de repaso</h3>
+        <form id="quizForm">
+            
+            
+            <fieldset class="quiz-q" data-answer="1">
+                <legend>1. La arquitectura en capas separa principalmente:</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-0" value="0"> Colores de la interfaz</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-0" value="1"> Presentación, negocio y datos</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-0" value="2"> Solo backups</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-0" value="3"> Compilación</label>
+                
+            </fieldset>
+            
+            
+            <fieldset class="quiz-q" data-answer="1">
+                <legend>2. Razor Pages facilita:</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-1" value="0"> Pruebas unitarias</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-1" value="1"> Páginas centradas en vistas y handlers</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-1" value="2"> Backup automático</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-1" value="3"> Diseño hardware</label>
+                
+            </fieldset>
+            
+            
+            <fieldset class="quiz-q" data-answer="1">
+                <legend>3. Una DAL (capa de datos) se encarga de:</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-2" value="0"> El diseño visual</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-2" value="1"> Acceso y operaciones sobre la BD</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-2" value="2"> Autenticación visual</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-2" value="3"> Compilación</label>
+                
+            </fieldset>
+            
+            
+            <fieldset class="quiz-q" data-answer="1">
+                <legend>4. El patrón CRUD incluye:</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-3" value="0"> Solo lectura</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-3" value="1"> Crear, leer, actualizar y eliminar</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-3" value="2"> Solo eliminación</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-3" value="3"> Estilos</label>
+                
+            </fieldset>
+            
+            
+            <fieldset class="quiz-q" data-answer="1">
+                <legend>5. Middleware en ASP.NET Core permite:</legend>
+                
+                <label class="quiz-option"><input type="radio" name="question-4" value="0"> Dibujar ventanas</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-4" value="1"> Procesar la petición HTTP</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-4" value="2"> Crear bases Access</label>
+                
+                <label class="quiz-option"><input type="radio" name="question-4" value="3"> Compilar C#</label>
+                
+            </fieldset>
+            
+            <div class="quiz-actions">
+                <button type="button" class="cyber-btn quiz-btn" id="checkQuiz">Ver puntaje</button>
+                <button type="button" class="cyber-btn quiz-btn" id="resetQuiz">Reiniciar</button>
+            </div>
+            <p id="quizResult" class="quiz-result" aria-live="polite"></p>
+        </form>
+    </div>
+    
+</section>
+
+    </main>
+    <footer class="cyber-footer">
+        <span>© 2026 NEONCORE SYS // BOOT SEQUENCE COMPLETE</span>
+    </footer>
+    
+    <script src="static/js/theme.js" defer></script>
+    <script src="static/js/search.js" defer></script>
+    <script src="static/js/quiz.js" defer></script>
+    <script src="static/js/scroll-progress.js" defer></script>
+    
+</body>
+</html>

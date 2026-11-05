@@ -21,10 +21,12 @@
         {% endif %}
     </div>
     {% endif %}
+    {% if data.objetivos %}
     <div class="panel">
         <h3>Objetivos del módulo</h3>
         <p>{{ data.objetivos }}</p>
     </div>
+    {% endif %}
     {% if data.herramientas %}
     <div class="panel">
         <h3>Herramientas utilizadas</h3>
@@ -51,10 +53,12 @@
         {% endfor %}
     </div>
     {% endif %}
+    {% if data.situacion %}
     <div class="panel">
         <h3>Situación problemática</h3>
         <p>{{ data.situacion }}</p>
     </div>
+    {% endif %}
     {% if data.quiz %}
     <div class="panel quiz-panel" id="modulo-quiz">
         <h3>Quiz de repaso</h3>

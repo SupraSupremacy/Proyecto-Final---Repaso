@@ -44,11 +44,14 @@ TOOL_INFO = {
 
 @app.context_processor
 def inject_build_flags():
+    ordered = globals().get("MODULO_ORDER", list(MODULOS))
+    ordered = [s for s in ordered if s in MODULOS]
     return {
         "static_build": STATIC_BUILD,
         "tool_info": TOOL_INFO,
         "learned_info": TOOL_LEARNED,
         "deep_info": TOOL_DEEP,
+        "modulos": [{"slug": s, "titulo": MODULOS[s].get("titulo", s)} for s in ordered],
     }
 
 
@@ -196,6 +199,91 @@ MODULOS = {
             {"q": "Git sirve para:", "options": ["Compilar .NET", "Control de versiones", "Crear dashboards", "Ejecutar pruebas unitarias"], "answer": 1},
         ],
     },
+    "modulo31": {
+        "titulo": "Módulo 3.1",
+        "nombre": "Desarrollo web con ASP.NET y C#",
+        "duracion": "8 semanas",
+        "herramientas": [
+            "Visual Studio",
+            "C#",
+            "ASP.NET Web Forms",
+            ".NET Framework 4.8",
+            "HTML / CSS",
+            "IIS Express",
+        ],
+        "quiz": [
+            {"q": "En ASP.NET Web Forms, el código del servidor se asocia mediante:", "options": ["Solo HTML", "Eventos y code-behind", "CSS", "SQL directo"], "answer": 1},
+            {"q": "Las Cookies se usan para:", "options": ["Guardar datos en el servidor únicamente", "Persistir estado del cliente", "Compilar código", "Crear bases de datos"], "answer": 1},
+            {"q": "Session permite:", "options": ["Estado por usuario en el servidor", "Diseño visual", "Respaldos", "Compilación"], "answer": 0},
+            {"q": "Un postback envía:", "options": ["Solo imágenes", "Datos del formulario al servidor", "Consultas SQL", "Archivos .exe"], "answer": 1},
+            {"q": "La validación del lado servidor:", "options": ["Es opcional siempre", "Aumenta seguridad y confiabilidad", "Elimina la base de datos", "Solo sirve para estilos"], "answer": 1},
+        ],
+    },
+    "modulo35": {
+        "titulo": "Módulo 3.5",
+        "nombre": "Desarrollo en capas con ASP.NET Core",
+        "duracion": "12 semanas",
+        "herramientas": [
+            "Visual Studio",
+            "C#",
+            ".NET 10 (ASP.NET Core)",
+            "ASP.NET Core MVC / Razor Pages",
+            ".NET Framework 4.8",
+            "SQL (MySQL / SQL Server)",
+            "HTML / CSS",
+        ],
+        "quiz": [
+            {"q": "La arquitectura en capas separa principalmente:", "options": ["Colores de la interfaz", "Presentación, negocio y datos", "Solo backups", "Compilación"], "answer": 1},
+            {"q": "Razor Pages facilita:", "options": ["Pruebas unitarias", "Páginas centradas en vistas y handlers", "Backup automático", "Diseño hardware"], "answer": 1},
+            {"q": "Una DAL (capa de datos) se encarga de:", "options": ["El diseño visual", "Acceso y operaciones sobre la BD", "Autenticación visual", "Compilación"], "answer": 1},
+            {"q": "El patrón CRUD incluye:", "options": ["Solo lectura", "Crear, leer, actualizar y eliminar", "Solo eliminación", "Estilos"], "answer": 1},
+            {"q": "Middleware en ASP.NET Core permite:", "options": ["Dibujar ventanas", "Procesar la petición HTTP", "Crear bases Access", "Compilar C#"], "answer": 1},
+        ],
+    },
+    "modulo36": {
+        "titulo": "Módulo 3.6",
+        "nombre": "Desarrollo multiplataforma con .NET MAUI",
+        "duracion": "12 semanas",
+        "herramientas": [
+            "Visual Studio",
+            "C#",
+            ".NET 10 (.NET MAUI)",
+            "XAML",
+            "Android SDK",
+            "iOS SDK",
+            "Android Emulator",
+            "iOS Simulator",
+        ],
+        "quiz": [
+            {"q": "XAML se usa para:", "options": ["Consultas SQL", "Definir interfaces declarativas", "Backups", "Compilar .NET"], "answer": 1},
+            {"q": "MAUI permite compartir:", "options": ["Solo código Android", "Código y UI entre plataformas", "Solo estilos web", "Bases de datos Access"], "answer": 1},
+            {"q": "Un layout como Grid sirve para:", "options": ["Respaldo de datos", "Organizar controles en filas/columnas", "Compilar código", "Consultar SQL"], "answer": 1},
+            {"q": "Para probar en Android normalmente usas:", "options": ["Access", "Emulador o dispositivo", "Excel", "Git"], "answer": 1},
+            {"q": "Data binding conecta:", "options": ["Solo botones", "Propiedades de datos con la UI", "Hardware", "Backups"], "answer": 1},
+        ],
+    },
+    "modulo37": {
+        "titulo": "Módulo 3.7",
+        "nombre": "Programación concurrente y móvil con .NET MAUI",
+        "duracion": "12 semanas",
+        "herramientas": [
+            "Visual Studio",
+            "C#",
+            ".NET 10 (.NET MAUI)",
+            "XAML",
+            "async / await",
+            "Task Parallel Library (TPL)",
+            "Data Binding (MAUI)",
+            "Android Emulator",
+        ],
+        "quiz": [
+            {"q": "async/await sirve para:", "options": ["Bloquear la UI", "Ejecutar tareas sin bloquear", "Crear tablas", "Diseñar XAML"], "answer": 1},
+            {"q": "Task representa:", "options": ["Un color", "Una operación asíncrona", "Una base de datos", "Un archivo"], "answer": 1},
+            {"q": "Data binding en MAUI permite:", "options": ["Solo estilos", "Sincronizar datos y vistas", "Eliminar tareas", "Compilar"], "answer": 1},
+            {"q": "Tras un await, la UI suele:", "options": ["Bloquearse siempre", "Continuar cuando la tarea termina", "Cerrar la app", "Perder estado"], "answer": 1},
+            {"q": "La concurrencia ayuda a:", "options": ["Más bloqueos", "Mejorar responsividad", "Eliminar validaciones", "Reducir memoria"], "answer": 1},
+        ],
+    },
 }
 
 
@@ -300,3 +388,51 @@ TOOL_DEEP = {
     "Jinja2": "Se extendieron templates con herencia, bloques, loops, condicionales y filtros. Se aprendió a compartir componentes como navbar y a generar rutas relativas/absolutas según entorno.",
     "Git & GitHub Pages": "Se inicializó repositorio, se hicieron commits y push, se gestionó visibilidad y se publicó sitio estático. Se aprendió flujo básico y troubleshooting de builds de Pages.",
 }
+
+MODULO_ORDER = ["modulo31", "modulo1", "modulo2", "modulo3", "modulo35", "modulo36", "modulo37", "modulo4"]
+
+TOOL_INFO.update({
+    "ASP.NET Web Forms": "Framework web clásico de .NET basado en controles de servidor, postback y páginas .aspx para construir aplicaciones web.",
+    "IIS Express": "Servidor web local para desarrollo y prueba de aplicaciones ASP.NET durante la depuración.",
+    ".NET 10 (ASP.NET Core)": "Runtime y framework web moderno para crear APIs, MVC y Razor Pages multiplataforma.",
+    "ASP.NET Core MVC / Razor Pages": "Patrones de desarrollo web para estructurar controllers/views o páginas centradas en handlers y UI.",
+    ".NET 10 (.NET MAUI)": "Framework multiplataforma para crear apps nativas de Android, iOS, macOS y Windows compartiendo código.",
+    "XAML": "Lenguaje de marcado declarativo para definir interfaces, recursos, estilos y data binding.",
+    "Android SDK": "Conjunto de herramientas/APIs para compilar y ejecutar aplicaciones Android.",
+    "iOS SDK": "Conjunto de herramientas/APIs para compilar y ejecutar aplicaciones iOS.",
+    "Android Emulator": "Emulador Android para probar la app sin dispositivo físico durante el desarrollo.",
+    "iOS Simulator": "Simulador iOS para probar la app sin dispositivo físico durante el desarrollo.",
+    "async / await": "Construcciones de C# para ejecutar tareas asíncronas sin bloquear el hilo de la interfaz.",
+    "Task Parallel Library (TPL)": "API de tareas y concurrencia para paralelismo, asincronía y continuaciones en .NET.",
+    "Data Binding (MAUI)": "Enlace entre propiedades de datos y la UI para actualizar la vista automáticamente.",
+})
+TOOL_LEARNED.update({
+    "ASP.NET Web Forms": "Trabajar con páginas .aspx, controles de servidor, postback, cookies y sesiones para estado web.",
+    "IIS Express": "Levantar y depurar aplicaciones web ASP.NET localmente desde Visual Studio.",
+    ".NET 10 (ASP.NET Core)": "Configurar apps modernas, middleware, routing y ejecución en diferentes entornos.",
+    "ASP.NET Core MVC / Razor Pages": "Estructurar vistas, controladores/handlers, modelos y flujo de peticiones HTTP.",
+    ".NET 10 (.NET MAUI)": "Compartir código y XAML entre plataformas y generar builds Android/iOS/Windows.",
+    "XAML": "Diseñar interfaces, layouts, recursos, estilos y enlaces de datos.",
+    "Android SDK": "Configurar compilación Android y usar APIs del sistema móvil.",
+    "iOS SDK": "Configurar compilación iOS y usar APIs del sistema móvil.",
+    "Android Emulator": "Probar comportamiento, layouts y eventos en Android sin dispositivo físico.",
+    "iOS Simulator": "Probar comportamiento, layouts y eventos en iOS sin dispositivo físico.",
+    "async / await": "Programar operaciones sin bloquear la interfaz y mantener datos de estado seguros.",
+    "Task Parallel Library (TPL)": "Crear, encadenar y esperar tareas concurrentes controlando errores.",
+    "Data Binding (MAUI)": "Conectar modelos de datos con controles XAML para actualización automática.",
+})
+TOOL_DEEP.update({
+    "ASP.NET Web Forms": "Se practicó la construcción de aplicaciones web con controles de servidor y eventos de postback. Se trabajó con cookies, sesión, arrays y URLs para mantener estado del usuario. La curva incluyó comprender el ciclo de vida de la página y evitar dependencias sólo del lado cliente. También se validó entradas antes de procesarlas.",
+    "IIS Express": "IIS Express permitió ejecutar y depurar localmente las páginas .aspx desde Visual Studio. Se aprendió a configurar el sitio, launch profiles y puertos. La práctica incluyó probar requests, postbacks y persistencia de sesión. Sirvió para validar el comportamiento antes de publicar.",
+    ".NET 10 (ASP.NET Core)": "Se configuraron proyectos web modernos, middleware, routing y entornos de desarrollo/producción. Se aprendió a separar modelos, vistas y lógica de negocio. La práctica incluyó compilar y ejecutar APIs/controladores. También se validó la configuración por entorno.",
+    "ASP.NET Core MVC / Razor Pages": "Se estructuraron vistas, controladores o handlers con modelos y validaciones. Se practicó el flujo petición/respuesta, bindings a formularios y redirecciones. La curva incluyó manejar errores y estados de modelo. También se separó la presentación de la lógica de negocio.",
+    ".NET 10 (.NET MAUI)": "Se desarrollaron apps multiplataforma compartiendo XAML y C#. Se aprendió a configurar targets Android/iOS/Windows y resolver diferencias de plataforma. La práctica incluyó layouts, controles, navegación y pruebas en emuladores. También se gestionaron recursos y assets.",
+    "XAML": "Se definió la UI de forma declarativa con layouts, recursos, estilos y enlace de datos. Se aprendió la jerarquía de controles y el ciclo de renderizado. La práctica incluyó layouts Grid/Stack/Flex/Absolute y páginas navegables. También se corrigieron problemas de espacio y alineación.",
+    "Android SDK": "Se usaron las APIs y herramientas de Android para compilar y ejecutar la app en emulador o dispositivo. Se comprendió configuración de targets, permisos y recursos Android. La práctica incluyó resolver diferencias de plataforma y depurar en Android.",
+    "iOS SDK": "Se usaron herramientas y APIs de Apple para compilar y probar en simulador o dispositivo. Se comprendió la configuración de targets iOS y recursos. La práctica incluyó validar comportamiento y layouts en iOS.",
+    "Android Emulator": "Se probó la app en un dispositivo virtual Android para validar flujo, layouts y eventos. Se aprendió a lanzar emulador, desplegar y leer logs. La práctica incluyó detectar fallos de UI y ciclo de vida.",
+    "iOS Simulator": "Se probó la app en un simulador iOS para validar flujo, layouts y eventos. Se aprendió a lanzar simulador, desplegar y depurar. La práctica incluyó verificar compatibilidad visual.",
+    "async / await": "Se implementaron operaciones sin bloquear la interfaz. Se aprendió a propagar await, manejar tareas y mantener estado consistente. La práctica incluyó medir tiempos y mostrar resultados en pantalla.",
+    "Task Parallel Library (TPL)": "Se crearon tareas y se coordinó su ejecución con Task.Run, Task.WhenAll y continuaciones. Se aprendió a capturar y mostrar errores. La práctica incluyó sincronizar datos y evitar bloqueos.",
+    "Data Binding (MAUI)": "Se enlazaron propiedades de modelos con controles XAML. Se aprendió a usar INotifyPropertyChanged y actualización automática. La práctica incluyó formularios, listas y resultados en tiempo real.",
+})
