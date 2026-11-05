@@ -3,6 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function () {
+            try {
+                var theme = localStorage.getItem('theme');
+                if (!theme && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                    theme = 'light';
+                }
+                if (theme === 'light' || theme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', theme);
+                }
+            } catch (e) {}
+        })();
+    </script>
     <title>Módulo 3.4 - Repaso de Módulos</title>
     
     <link rel="stylesheet" href="static/css/style.css">
@@ -28,6 +41,7 @@
                 
                 
             </nav>
+            <button id="themeToggle" class="theme-toggle" type="button" aria-label="Cambiar tema">◐</button>
             <div class="search-wrap">
                 <input id="searchInput" type="search" class="search-input" placeholder="Buscar en módulos..." autocomplete="off">
                 <select id="filterModule" class="search-select"><option value="">Todos los módulos</option></select>
@@ -186,6 +200,7 @@
         <span>© 2026 NEONCORE SYS // BOOT SEQUENCE COMPLETE</span>
     </footer>
     
+    <script src="static/js/theme.js" defer></script>
     <script src="static/js/search.js" defer></script>
     <script src="static/js/scroll-progress.js" defer></script>
     
