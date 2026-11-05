@@ -233,5 +233,5 @@ html[data-theme="light"] .modulo .panel li,
 html[data-theme="light"] .modulo .panel .tool-link,
 html[data-theme="light"] .modulo .panel .learned,
 html[data-theme="light"] .modulo .panel .learned strong {
-    color: #ffffff;
+    color: #ffffff !important;
 }
